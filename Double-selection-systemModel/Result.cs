@@ -9,29 +9,29 @@ namespace Double_selection_systemModel
     public class Result
     {
         
-        private int _studentNo = 0;
-        private int _subjectNo = 0;
-        private int _studentResult = 0;
-        private DateTime _examDate;
+        private int _resultId = 0;
+        private string  _teaNo = string.Empty;
+        private int _groupId = 0;
+        private string topic =string.Empty;
 
         /// <summary>
-        /// 学生学号
+        /// ID
         /// </summary>
-        public int StudentNo { get => _studentNo; set => _studentNo = value; }
+        public int ResultId { get => _resultId; set => _resultId = value; }
 
         /// <summary>
-        /// 科目编号
+        /// 老师id
         /// </summary>
-        public int SubjectNo { get => _subjectNo; set => _subjectNo = value; }
+        public string TeaNo { get => _teaNo; set => _teaNo = value; }
 
         /// <summary>
-        /// 学生选择结果
+        /// 组别id
         /// </summary>
-        public int StudentResult { get => _studentResult; set => _studentResult = value; }
+        public int GroupId { get => _groupId; set => _groupId = value; }
 
         /// <summary>
-        /// 截止日期
+        /// 课题
         /// </summary>
-        public DateTime ExamDate { get => _examDate; set => _examDate = value; }
+        public string Topic { get => topic; set => topic = value; }
     }
 }

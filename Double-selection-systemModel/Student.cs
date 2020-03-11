@@ -6,67 +6,74 @@ using System.Threading.Tasks;
 
 namespace Double_selection_systemModel
 {
+    [Serializable]
     public class Student
     {
-        private int _studentNo = 0;
-        private string _loginPwd = string.Empty;
-        private string _studentName = string.Empty;
-        private string _gender = string.Empty;
-        private int _gradeId = 0;
-        private string _phone = string.Empty;
-        private string _address = string.Empty;
-        private DateTime _bornDate;
-        private string _email = string.Empty;
-        private string _identityCard = string.Empty;
+        private string _stuNo = string.Empty;
+        private string _stuPwd = string.Empty;
+        private string _stuName = string.Empty;
+        private string _stuSex = string.Empty;
+        private string academy = string.Empty;
+        private string profession = string.Empty;
+        private int grade = 0;
+        private int _groupID = 0;
+        private string _voluntaryFirst = string.Empty;
+        private string _voluntarySecond = string.Empty;
+        private string _voluntaryThird = string.Empty;
 
         /// <summary>
-        /// 学生学号
+        /// 学号
         /// </summary>
-        public int StudentNo { get => _studentNo; set => _studentNo = value; }
+        public string StuNo { get => _stuNo; set => _stuNo = value; }
 
         /// <summary>
-        /// 学生密码
+        /// 密码
         /// </summary>
-        public string LoginPwd { get => _loginPwd; set => _loginPwd = value; }
+        public string StuPwd { get => _stuPwd; set => _stuPwd = value; }
 
         /// <summary>
-        /// 学生姓名
+        /// 姓名
         /// </summary>
-        public string StudentName { get => _studentName; set => _studentName = value; }
+        public string StuName { get => _stuName; set => _stuName = value; }
 
         /// <summary>
-        /// 学生性别
+        /// 性别
         /// </summary>
-        public string Gender { get => _gender; set => _gender = value; }
+        public string StuSex { get => _stuSex; set => _stuSex = value; }
 
         /// <summary>
-        /// 学生年级ID
+        /// 学院
         /// </summary>
-        public int GradeId { get => _gradeId; set => _gradeId = value; }
+        public string Academy { get => academy; set => academy = value; }
 
         /// <summary>
-        /// 学生手机号
+        /// 专业
         /// </summary>
-        public string Phone { get => _phone; set => _phone = value; }
+        public string Profession { get => profession; set => profession = value; }
 
         /// <summary>
-        /// 学生地址
+        /// 个人综测成绩
         /// </summary>
-        public string Address { get => _address; set => _address = value; }
+        public int Grade { get => grade; set => grade = value; }
 
         /// <summary>
-        /// 学生出生日期
+        /// 组别ID
         /// </summary>
-        public DateTime BornDate { get => _bornDate; set => _bornDate = value; }
+        public int GroupID { get => _groupID; set => _groupID = value; }
 
         /// <summary>
-        /// 学生邮箱
+        /// 志愿一老师id
         /// </summary>
-        public string Email { get => _email; set => _email = value; }
+        public string VoluntaryFirst { get => _voluntaryFirst; set => _voluntaryFirst = value; }
 
         /// <summary>
-        /// 学生身份证号码
+        /// 志愿二老师id
         /// </summary>
-        public string IdentityCard { get => _identityCard; set => _identityCard = value; }
+        public string VoluntarySecond { get => _voluntarySecond; set => _voluntarySecond = value; }
+
+        /// <summary>
+        /// 志愿三老师id
+        /// </summary>
+        public string VoluntaryThird { get => _voluntaryThird; set => _voluntaryThird = value; }
     }
 }
