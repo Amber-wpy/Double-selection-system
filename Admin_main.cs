@@ -69,7 +69,9 @@ namespace Double_selection_system
 
         private void Admin_main_Load(object sender, EventArgs e)
         {
-            
+            // TODO: 这行代码将数据加载到表“导师双选系统DataSet.Teacher”中。您可以根据需要移动或删除它。
+            this.teacherTableAdapter.Fill(this.导师双选系统DataSet.Teacher);
+
 
         }
     }
