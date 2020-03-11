@@ -16,7 +16,7 @@ namespace Double_selection_system
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmLogin());
+            Application.Run(new Admin_main());
         }
     }
 }
